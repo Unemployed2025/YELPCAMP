@@ -1,0 +1,161 @@
+/* index.css */
+
+/* Base Styles */
+
+/* Container for all campgrounds */
+.container {
+    margin-top: 20px;
+}
+
+/* Campground Card */
+.campground-card {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Campground Image */
+.campground-image {
+    flex: 1 1 40%;
+    max-width: 40%;
+}
+
+.campground-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Campground Details */
+.campground-details {
+    flex: 1 1 60%;
+    padding: 20px;
+}
+
+.campground-details .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.campground-details .card-text {
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 10px;
+}
+
+.campground-details .text-muted {
+    font-size: 0.875rem;
+    color: #888888;
+}
+
+/* View Button */
+.campground-details .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.campground-details .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries */
+
+/* Tablets and Small Screens (Max Width: 768px) */
+@media (max-width: 768px) {
+    .campground-card {
+        flex-direction: column;
+    }
+
+    .campground-image,
+    .campground-details {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .campground-details {
+        padding: 15px;
+    }
+
+    .campground-details .card-title {
+        font-size: 1.25rem;
+    }
+
+    .campground-details .card-text {
+        font-size: 0.95rem;
+    }
+
+    .campground-details .btn-primary {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Mobile Devices (Max Width: 480px) */
+@media (max-width: 480px) {
+    .campground-details {
+        padding: 10px;
+    }
+
+    .campground-details .card-title {
+        font-size: 1.1rem;
+    }
+
+    .campground-details .card-text {
+        font-size: 0.9rem;
+    }
+
+    .campground-details .text-muted {
+        font-size: 0.8rem;
+    }
+
+    .campground-details .btn-primary {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Additional Responsive Enhancements */
+
+/* Ensure Images are Responsive */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Adjust margin for the main heading */
+h1.text-center {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333333;
+}
+
+/* Ensure the map container is responsive */
+#cluster-map {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    #cluster-map {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    #cluster-map {
+        height: 200px;
+    }
+}

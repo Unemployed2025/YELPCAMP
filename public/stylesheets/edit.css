@@ -1,0 +1,83 @@
+/* Existing Styles */
+
+.nav-link.active {
+    color: white;
+    border-bottom-color: white;
+}
+
+.btn-secondary,
+.btn-secondary:hover {
+    color: #333;
+    text-shadow: none;
+}
+
+/* Media Queries */
+
+/* For Tablets and Small Screens (Max Width: 768px) */
+@media (max-width: 768px) {
+    /* Navigation Links */
+    .nav-link {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    .nav-link.active {
+        border-bottom-width: 2px;
+    }
+
+    /* Buttons */
+    .btn-secondary {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .btn-secondary:hover {
+        background-color: #e2e6ea;
+    }
+
+    /* Additional Adjustments */
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+}
+
+/* For Mobile Devices (Max Width: 480px) */
+@media (max-width: 480px) {
+    /* Navigation */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid #555;
+    }
+
+    .nav-link.active {
+        border-bottom-color: #fff;
+    }
+
+    /* Buttons */
+    .btn-secondary {
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 1rem;
+    }
+
+    /* Adjust Font Sizes */
+    body {
+        font-size: 14px;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Stack Elements Vertically */
+    .container {
+        padding: 0 1rem;
+    }
+}
